@@ -2,6 +2,7 @@ provider "kubernetes" {
   config_path = "~/.kube/config"
 }
 
+
 resource "kubernetes_namespace" "local_app" {
   metadata {
     name = "local-app"
